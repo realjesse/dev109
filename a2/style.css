@@ -3,7 +3,7 @@ body {
 }
 
 #title {
-  position:fixed;
+  position: static; /* Jesse changed to static */
   top:0px;
   left:0px;
   padding:10px;
