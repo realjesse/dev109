@@ -11,11 +11,14 @@ h1 {
   font-family: 'DancingScriptRegular';
   font-size: 400%;
 }
-i, a, a:hover, a:visited {
+a, a:hover, a:visited {
 	color: #665544;}
 p {
   font-family: 'DancingScriptRegular';
   font-weight: normal;
   font-style: normal;
   font-size: 200%;
+}
+i {
+  color: darkgreen;
 }
