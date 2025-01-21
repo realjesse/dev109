@@ -39,7 +39,7 @@ img {
 
 .white{
   border: 1px solid black;
-  width: 12.5%; /* Jesse changed this */
+  width: 12%; /* Jesse changed this */
   height: 60px;
   background-color:white;
   float:left;
@@ -47,7 +47,7 @@ img {
 
 .black{
   border: 1px solid black;
-  width: 12.5%; /* Jesse changed this */
+  width: 12%; /* Jesse changed this */
   height: 60px;
   background-color:#787878;
   float:left;
