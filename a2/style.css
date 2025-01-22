@@ -25,12 +25,12 @@ img {
 }
 
 #container {
-  margin-top: 5%; 
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
+  margin-top:5%; /* Aatiqa changed this */
+  margin-left: auto; /* Jesse changed this */
+  margin-right: auto; /* Jesse changed this */
+  margin-bottom:5%; /* Aatiqa changed this */
+  max-width: 660px; /* Jesse changed this */
 }
-
 
 .row{
   position:relative;
