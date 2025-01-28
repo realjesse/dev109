@@ -34,3 +34,11 @@ li {
   height: 10em;
   margin-bottom: 1em;
   background-color: #efefef;}
+
+#feature {
+  background-color: #FFE2DA;
+  background-image: url("https://img.freepik.com/free-vector/roses-bloom_53876-89184.jpg?t=st=1738024241~exp=1738027841~hmac=bf1805275d0feac61be1a5bb43f5591e182283e8a1cc1e3c75b517f9a935b471&w=740");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
