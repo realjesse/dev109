@@ -28,8 +28,25 @@ body {
   margin: 1%;
 }
 
+#nav {
+  background-color: #FF6458;
+}
+
+.column1 {
+  background-color: rgb(187, 230, 327);
+}
+
+.column2 {
+  background-color: #A7C6D8;
+}
+
 .column3 {
   margin-right: 0%;
+  background-color: #F6BF48;
+}
+
+#footer {
+  background-color: #3E6443;
 }
 
 li {
