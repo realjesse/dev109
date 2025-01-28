@@ -29,9 +29,10 @@ body {
 }
 
 #header h1 {
-   font-family: 'PixelOperatorSCRegular';
-   font-weight: normal;
-   font-style: normal;
+  font-family: 'PixelOperatorSCRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 64px
 }
 
 #nav {
