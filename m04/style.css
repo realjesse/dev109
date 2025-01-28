@@ -28,6 +28,12 @@ body {
   margin: 1%;
 }
 
+#header h1 {
+   font-family: 'PixelOperatorSCRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
 #nav {
   background-color: #FF6458;
 }
