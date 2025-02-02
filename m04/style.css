@@ -1,80 +1,85 @@
-*{
+* {
   font-family: Arial, Verdana, sans-serif;
   color: #665544;
   text-align: center;
 }
 
 body {
-	width: 90%;
-	margin: 0 auto;
-    background-image: url("https://images.unsplash.com/photo-1624838000463-bcfb268be899?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://plus.unsplash.com/premium_vector-1723278803485-34c02757ced6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-   #content {
-   overflow: auto;
-}
-	#nav, 
-    #feature, 
-    #footer {
-    margin:1%
-}
-   #header h1{
-   font-family: 'ArchivoRegular';
-   font-weight: normal;
-   font-style: normal;
-   font-size: 64px
-    
-}
-  #nav{
-    background-color: azure;
+#content {
+  overflow: auto;
 }
 
-    .column1,
-    .column2,
-    .column3{
-    width: 31.3%;
-	float: left;
-  	margin: 1%;
-}
-    .column1{
-    background-color:lightgreen;
-}
-    .column2{
-    background-color:skyblue;
-}
-	.column3 {
-	margin-right: 0%;
-    background-color:hotpink;     
+#nav, 
+#feature, 
+#footer {
+  margin: 1%;
 }
 
-#footer{
-  background-color: cyan;
+.column1, 
+.column2, 
+.column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
 }
 
-#footer p{
-  color:black;
+#header h1 {
+  font-family: 'PixelOperatorSCRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 64px
 }
 
-	li {
-	display: inline;
-	padding: 0.5em;
+#nav {
+  background-color: #FF6458;
 }
 
-	#nav, 
-    #footer {
-    padding: 0.5em 0;
+.column1 {
+  background-color: rgb(187, 230, 327);
 }
 
-	#feature, 
-    .article {
-	height: 10em;
-	margin-bottom: 1em;
+.column2 {
+  background-color: #A7C6D8;
+}
+
+.column3 {
+  margin-right: 0%;
+  background-color: #F6BF48;
+}
+
+#footer {
+  background-color: #3E6443;
+}
+
+#footer p {
+  color: white;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+#nav, 
+#footer {
+  padding: 0.5em 0;
+}
+
+#feature, 
+.article {
+  height: 10em;
+  margin-bottom: 1em;
 }
 
 #feature {
-    background-color: #8CC63E;
-    background-image: url("https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg");
-    background-size:contain;
-    background-position: right;
-    background-repeat:no-repeat;
+  background-color: #FFE2DA;
+  background-image: url("https://img.freepik.com/free-vector/roses-bloom_53876-89184.jpg?t=st=1738024241~exp=1738027841~hmac=bf1805275d0feac61be1a5bb43f5591e182283e8a1cc1e3c75b517f9a935b471&w=740");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
