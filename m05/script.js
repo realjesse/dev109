@@ -4,10 +4,10 @@ var i = 1;                 // Set counter to 1
 var msg = '<h2>Multiplication Table</h2>';              // Message
 
 if (operator === 'addition') {
-  // Do addition
-  while (i < 11) {
-    msg += i + ' + ' + table + ' = ' + (i + table) + '<br />';
-    i++;
+  // Do addition, commented out, don't need
+  //while (i < 11) {
+  //  msg += i + ' + ' + table + ' = ' + (i + table) + '<br />';
+  //  i++;
   }
 } else {
   // Do multiplication
