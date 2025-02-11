@@ -188,3 +188,7 @@ a:hover {
 .clear { 
   clear: both; 
 }
+
+.content div img {
+  float: left;
+}
