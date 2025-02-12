@@ -130,3 +130,7 @@ a:hover {
   width: 100px;
   height: 100px;
 }
+
+#content div {
+  margin: 50px;
+}
