@@ -91,57 +91,10 @@ a:hover {
   float: right; 
 }
 
-#menu {
-  font-size: 14px;
-  float: right; 
-  width: 300px; 
-  color: #fff;
-  margin: 30px 20px 20px 0;
-}
-
-#menu h3 {
-  font-weight: normal; 
-  background: #5f5f5f; 
-  color: #fff; 
-  padding: 10px; 
-  margin: 10px 0; 
-}
-
-#menu ul { 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-
-  list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
-}
-
-#menu ul li a { 
-  color: #12c; 
-  text-decoration: none; 
-  border-bottom: 1px dotted #12c; 
-}
-
-#menu ul li a:hover { 
-  color: #c12; 
-  border-bottom: 1px dotted #c12; 
-}
-
 #content { 
   float: left; 
   width: 580px; 
   margin: 10px 0 40px 20px;
-}
-
-.cleft { 
-  float: left; 
-  width: 280px; 
-  margin: 10px 0; 
-}
-
-.cright { 
-  float: right; 
-  width: 280px; 
-  margin: 10px 0; 
 }
 
 #footer { 
@@ -166,13 +119,6 @@ a:hover {
 
 #footer a:hover { 
   border-bottom: 1px dotted #ccc; 
-}
-
-.left { 
-  float: left; 
-}
-.right { 
-  float: right; 
 }
 .clear { 
   clear: both; 
