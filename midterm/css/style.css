@@ -176,6 +176,7 @@ a:hover {
 #validated .row {
   border-bottom: 1px solid grey;
   margin: 0 10%;
+  margin-top: 20px;
 }
 
 /* end styling for validated */
