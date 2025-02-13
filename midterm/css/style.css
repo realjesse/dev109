@@ -9,12 +9,15 @@ body {
   background-image: url("https://img.freepik.com/free-vector/white-background-with-binary-code-numbers_1017-37330.jpg?t=st=1739319237~exp=1739322837~hmac=3c60cff74719c37b979fd305e30a5c480a0dab6ec0cce23338afaa1d264749c2&w=1380");
 }
 
+/* link styling */
 a { 
   color: #000088;
 }
 a:hover {
   color: #880000;
 }
+
+/* end link styling */
 
 #wrap { 
   margin: 40px auto;
