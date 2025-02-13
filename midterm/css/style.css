@@ -141,7 +141,10 @@ a:hover {
   float: left;
   text-align: center;
   box-sizing: border-box;
-  border: 1px solid red;
+}
+
+.html-column {
+  border-right: 1px solid grey
 }
 
 #validated .row img {
