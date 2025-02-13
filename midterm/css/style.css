@@ -143,3 +143,8 @@ a:hover {
   box-sizing: border-box;
   border: 1px solid red;
 }
+
+#validated .row img {
+  width: 100px;
+  height: 100px;
+}
