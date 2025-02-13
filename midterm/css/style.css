@@ -151,3 +151,8 @@ a:hover {
   width: 100px;
   height: 100px;
 }
+
+#validated #content {
+  margin: 0 auto;
+  width: 100%;
+}
