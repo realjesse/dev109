@@ -134,3 +134,12 @@ a:hover {
 #content div {
   margin: 50px;
 }
+
+.html-column,
+.css-column {
+  width: 50%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
