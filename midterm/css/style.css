@@ -29,6 +29,8 @@ a:hover {
   border-radius: 10px;
 }
 
+/* start styling for header */
+
 #header {
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -64,6 +66,10 @@ a:hover {
   display: inline;
 }
 
+/* end styling for header */
+
+/* start styling for topmenu */
+
 #topmenu {
   background: #f1f1f1;
   padding: 10px 20px;
@@ -90,11 +96,15 @@ a:hover {
   float: right; 
 }
 
+/* end styling for topmenu */
+
 #content { 
   float: left; 
   width: 580px; 
   margin: 10px 0 40px 20px;
 }
+
+/* start styling for footer */
 
 #footer { 
   -webkit-border-bottom-right-radius: 10px;
@@ -117,9 +127,14 @@ a:hover {
 #footer a:hover { 
   border-bottom: 1px dotted #ccc; 
 }
+
+/* end styling for footer */
+
 .clear { 
   clear: both; 
 }
+
+/*styling for artifacts */
 
 #artifacts #content div img {
   float: left;
@@ -130,6 +145,10 @@ a:hover {
 #artifacts #content div {
   margin: 50px;
 }
+
+/* end styling for artifacts */
+
+/* styling for validated */
 
 .html-column,
 .css-column {
@@ -157,3 +176,5 @@ a:hover {
   border-bottom: 1px solid grey;
   margin: 0 10%;
 }
+
+/* end styling for validated */
