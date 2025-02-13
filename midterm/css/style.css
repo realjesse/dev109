@@ -138,6 +138,7 @@ a:hover {
 /*styling for artifacts */
 
 #artifacts #content div img {
+  margin-right: 20px;
   float: left;
   width: 100px;
   height: 100px;
