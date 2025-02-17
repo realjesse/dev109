@@ -9,24 +9,26 @@ function Hotel(name, rooms, booked) {
 }
 
 
-// Create two hotel objects
+// Create hotel objects
 var quayHotel = new Hotel('Quay', 40, 25);
 var parkHotel = new Hotel('Park', 120, 77);
-
 var sunsetHotel = new Hotel('Sunset', 86, 10);
 
 
 // Update the HTML for the page
+// Quay hotel
 var details1 = quayHotel.name + ' rooms: ';
     details1 += quayHotel.checkAvailability();
 var elHotel1 = document.getElementById('hotel1');
 elHotel1.textContent = details1;
 
+// Park hotel
 var details2 = parkHotel.name + ' rooms: ';
     details2 += parkHotel.checkAvailability();
 var elHotel2 = document.getElementById('hotel2');
 elHotel2.textContent = details2;
 
+// Sunset hotel
 var details3 = sunsetHotel.name + ' rooms: ' + sunsetHotel.checkAvailability();
 var elHotel3 = document.getElementById('hotel3');
 elHotel3.textContent = details3;
