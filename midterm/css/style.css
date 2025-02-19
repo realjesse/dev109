@@ -79,6 +79,11 @@ body {
   justify-content: space-around;
 }
 
+#validation .content img {
+  width: 400px;
+  height: 100px;
+}
+
 /* footer */
 
 .footer {
