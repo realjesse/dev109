@@ -56,6 +56,12 @@ body {
   display: flex;
 }
 
+/* Content for artifacts */
+#artifacts img {
+  width: 150px;
+  height: 150px;
+}
+
 /* footer */
 
 .footer {
