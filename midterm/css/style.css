@@ -57,7 +57,7 @@ body {
 }
 
 /* Content for artifacts */
-#artifacts img {
+#artifacts .content img {
   width: 150px;
   height: 150px;
 }
