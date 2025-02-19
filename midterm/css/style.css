@@ -54,6 +54,9 @@ body {
 .footer {
     text-align: center;
     padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer p {
