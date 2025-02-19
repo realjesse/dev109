@@ -60,6 +60,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: #272d39;
+    color: #fff;
 }
 
 .footer p {
