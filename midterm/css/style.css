@@ -84,6 +84,12 @@ body {
   height: 100px;
 }
 
+#validation .html-column div,
+#validation .css-column div {
+  border-bottom: 1px solid;
+  margin: 20px 0;
+}
+
 /* footer */
 
 .footer {
