@@ -57,6 +57,10 @@ body {
 }
 
 /* Content for artifacts */
+#artifacts .row div {
+  margin: 15px;
+}
+
 #artifacts .content img {
   width: 150px;
   height: 150px;
