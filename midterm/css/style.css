@@ -73,6 +73,12 @@ body {
   align-items: center;
 }
 
+/* Content for validation page */
+#validation .content {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* footer */
 
 .footer {
