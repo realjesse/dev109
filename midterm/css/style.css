@@ -50,7 +50,8 @@ body {
 
 .content {
     flex: 1;
-    background-image: url("https://img.freepik.com/free-vector/binary-code-algorithm-concept-background-virtual-learning_1017-45444.jpg?t=st=1740011025~exp=1740014625~hmac=1549417ba813b0e55aa65e7f92964877aff17d5aab0a82ec07388c2c3fa1e8b9&w=1380")
+    background-image: url("https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg?t=st=1740011773~exp=1740015373~hmac=b59a420f0144633305456a2540772bfd17e274d5de8c307e98b6570b16226695&w=1380");
+    background-size: cover;
 }
 
 .content .row {
