@@ -98,6 +98,17 @@ body {
   margin: 50px 0;
 }
 
+/* Thank you style */
+#thank-you .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thank-you .content h2 {
+  font-size: 50px;
+}
+
 /* footer */
 
 .footer {
