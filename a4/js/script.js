@@ -119,7 +119,7 @@ function getEmailValidity() {
   }
   
   else {
-    isEmailvalid = true;
+    isEmailValid = true;
     console.log("Email is valid");
   }
   
