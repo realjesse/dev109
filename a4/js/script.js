@@ -1,5 +1,5 @@
 function isValid() {
-  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity() && getUsernameValidity()) {
+  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity() && getUsernameValidity() && getPasswordValidity()) {
     return true;
   }
   else {
@@ -194,9 +194,44 @@ function getUsernameValidity() {
   return isUsernameValid;
 }
 
+function getPasswordValidity() {
+  // create variables
+  let isPasswordValid = false;
+  
+  // Read values from HTML
+  let password = document.getElementById("password").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if password is empty or null, if so give error
+  if (password === null || password === "") {
+    errorMessages += "<p>The password is required, please enter one</p>";
+    console.log("Password invalid - empty");
+  }
+  
+  // Check if password is longer than 7 characters, if so give error
+  else if (password.length > 7) {
+    errorMessages += "<p>Password can only be a maximum of 12 characters, please shorten it</p>";
+    console.log("Password invalid - too long");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isPasswordValid = true;
+    console.log("Password valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("passwordWarning").innerHTML = errorMessages;
+  
+  // Return status of isUsernameValid
+  return isPasswordValid;
+}
+
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
 document.getElementById("email").addEventListener('blur', getEmailValidity, false);
 document.getElementById("phone").addEventListener('blur', getPhoneValidity, false);
 document.getElementById("username").addEventListener('blur', getUsernameValidity, false);
+document.getElementById("password").addEventListener('blur', getPasswordValidity, false);
