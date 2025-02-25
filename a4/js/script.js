@@ -1,5 +1,5 @@
 function isValid() {
-  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity()) {
+  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity()) {
     return true;
   }
   else {
@@ -121,10 +121,47 @@ function getEmailValidity() {
 }
 
 function getPhoneValidity() {
+  // create variables
+  let isPhoneValid = false;
   
+  // Read values from HTML
+  let phone = document.getElementById("phone").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if phone value is null or empty, if so give error
+  if (phone === null || phone === "") {
+    errorMessages += "<p>Phone number is required, please enter one.</p>";
+    console.log("Phone invalid - not entered");
+  }
+  
+  // Check if phone length is greater than 15, if so give error
+  else if (phone.length > 15) {
+    errorMessages += "<p>Phone number can be a maximum of 15 digits long</p>";
+    console.log("Phone invalid - too many digits");
+  }
+  
+  // Check if phone number has any non-numerical digits, if so give an error
+  else if (isNaN(phone)) {
+    errorMessages += "<p>Phone number must only contain numerical digits</p>";
+    console.log("Phone invalid - non-numerical characters entered");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isPhoneValid = true;
+    console.log("Phone valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("phoneWarning").innerHTML = errorMessages;
+  
+  // Return status of phoneValidity
+  return isPhoneValid;
 }
 
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
 document.getElementById("email").addEventListener('blur', getEmailValidity, false);
+document.getElementById("phone").addEventListener('blur', getPhoneValidity, false);
