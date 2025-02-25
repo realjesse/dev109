@@ -1,3 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6ffff;
+}
+
+form {
+  border: solid 1px #d9d9d9;
+  padding: 10px;
+  background-color: #ccfff5;
+}
+
 .warning {
     color:red;
 }
