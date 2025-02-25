@@ -1,7 +1,7 @@
 function isValid() {
   if (getFirstNameValidity() && 
       getLastNameValidity() && 
-      getEmailvalidity() && 
+      getEmailValidity() && 
       getPhoneValidity() && 
       getUsernameValidity() && 
       getPasswordValidity() && 
