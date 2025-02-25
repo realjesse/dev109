@@ -1,5 +1,5 @@
 function isValid() {
-  if (firstName()) {
+  if (getFirstNameValidity()) {
     return true;
   }
   else {
@@ -9,7 +9,7 @@ function isValid() {
   }
 }
 
-function firstName() {
+function getFirstNameValidity() {
   //1) Create variable
   var validFirstName = false;
 
@@ -38,7 +38,7 @@ function firstName() {
   return (validFirstName);
 };
 
-function lastName() {
+function getLastNameValidity() {
   // Create variables
   let isvalid = false;
   
@@ -46,4 +46,4 @@ function lastName() {
 }
 
 // Add event listeners for each field, checks if the input is valid
-document.getElementById("firstName").addEventListener('blur', firstName, false);
+document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
