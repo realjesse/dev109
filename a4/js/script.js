@@ -11,11 +11,11 @@ function isValid() {
 
 function getFirstNameValidity() {
   //1) Create variable
-  var validFirstName = false;
+  let validFirstName = false;
 
   //2) read value from HTML
-  var firstName = document.getElementById("firstName").value;
-  var errorMessages = "";
+  let firstName = document.getElementById("firstName").value;
+  let errorMessages = "";
 
   //3) Do validation
   if (firstName === "null" || firstName === "" || firstName.length > 20 ) {
