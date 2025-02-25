@@ -1,5 +1,5 @@
 function isValid() {
-  if (getFirstNameValidity() && getLastNameValidity()) {
+  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity()) {
     return true;
   }
   else {
