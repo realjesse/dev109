@@ -1,5 +1,11 @@
 function isValid() {
-  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity() && getUsernameValidity() && getPasswordValidity()) {
+  if (getFirstNameValidity() && 
+      getLastNameValidity() && 
+      getEmailvalidity() && 
+      getPhoneValidity() && 
+      getUsernameValidity() && 
+      getPasswordValidity() && 
+      getAddressValidity()) {
     return true;
   }
   else {
@@ -224,8 +230,36 @@ function getPasswordValidity() {
   // Send error messages to HTML
   document.getElementById("passwordWarning").innerHTML = errorMessages;
   
-  // Return status of isUsernameValid
+  // Return status of isPasswordValid
   return isPasswordValid;
+}
+
+function getAddressValidity() {
+  // create variables
+  let isAddressValid = false;
+  
+  // Read values from HTML
+  let address = document.getElementById("address").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if address is empty or null, if so give error
+  if (address === null || address === "") {
+    errorMessages += "<p>The address is required, please enter one</p>";
+    console.log("Address invalid - empty");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isAddressValid = true;
+    console.log("Address valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("addressWarning").innerHTML = errorMessages;
+  
+  // Return status of isAddressValid
+  return isAddressValid;
 }
 
 // Add event listeners for each field, checks if the input is valid
@@ -235,3 +269,4 @@ document.getElementById("email").addEventListener('blur', getEmailValidity, fals
 document.getElementById("phone").addEventListener('blur', getPhoneValidity, false);
 document.getElementById("username").addEventListener('blur', getUsernameValidity, false);
 document.getElementById("password").addEventListener('blur', getPasswordValidity, false);
+document.getElementById("address").addEventListener('blur', getAddressValidity, false);
