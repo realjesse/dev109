@@ -9,7 +9,6 @@ function isValid() {
   }
 }
 
-firstName.addEventListener('blur', firstName, false);
 function firstName(){
   //1) Create variable
   var validFirstName = false;
@@ -38,3 +37,6 @@ function firstName(){
   //5) return status of each field
   return (validFirstName);
 };
+
+// Add event listeners for each field, checks if the input is valid
+document.getElementById("firstName").addEventListener('blur', firstName, false);
