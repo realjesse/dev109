@@ -6,7 +6,8 @@ function isValid() {
       getUsernameValidity() && 
       getPasswordValidity() && 
       getAddressValidity() &&
-      getCityValidity()) {
+      getCityValidity() &&
+      getStateValidity()) {
     return true;
   }
   else {
@@ -291,6 +292,34 @@ function getCityValidity() {
   return isCityValid;
 }
 
+function getStateValidity() {
+  // create variables
+  let isStateValid = false;
+  
+  // Read values from HTML
+  let state = document.getElementById("state").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if state is empty or null, if so give error
+  if (state === null || state === "") {
+    errorMessages += "<p>The state is required, please enter one</p>";
+    console.log("State invalid - empty");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isStateValid = true;
+    console.log("State valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("stateWarning").innerHTML = errorMessages;
+  
+  // Return status of isStateValid
+  return isStateValid;
+}
+
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
@@ -300,3 +329,4 @@ document.getElementById("username").addEventListener('blur', getUsernameValidity
 document.getElementById("password").addEventListener('blur', getPasswordValidity, false);
 document.getElementById("address").addEventListener('blur', getAddressValidity, false);
 document.getElementById("city").addEventListener('blur', getCityValidity, false);
+document.getElementById("state").addEventListener('blur', getStateValidity, false);
