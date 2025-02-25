@@ -11,7 +11,7 @@ function isValid() {
 
 function getFirstNameValidity() {
   //1) Create variable
-  let validFirstName = false;
+  let isFirstNameValid = false;
 
   //2) read value from HTML
   let firstName = document.getElementById("firstName").value;
@@ -32,7 +32,7 @@ function getFirstNameValidity() {
   
   // If it passed the above, then it is valid!
   else {
-    validFirstName = true;
+    isFirstNameValid = true;
     console.log("First name valid")
   };
 
@@ -40,12 +40,12 @@ function getFirstNameValidity() {
   document.getElementById("firstNameWarning").innerHTML = errorMessages;
 
   //5) return status of each field
-  return (validFirstName);
+  return isFirstNameValid;
 };
 
 function getLastNameValidity() {
   // Create variables
-  let isvalid = false;
+  let isLastNameValid = false;
   
   // Read values from HTML
   let lastName = document.getElementById("lastName").value;
@@ -66,7 +66,7 @@ function getLastNameValidity() {
   
   // If it passed the above, then it is valid!
   else {
-    validLastName = true;
+    isLastNameValid = true;
     console.log("Last name valid");
   }
   
@@ -74,7 +74,7 @@ function getLastNameValidity() {
   document.getElementById("lastNameWarning").innerHTML = errorMessages;
   
   // Return status of each field
-  return isvalid;
+  return isLastNameValid;
   
 }
 
