@@ -8,7 +8,8 @@ function isValid() {
       getAddressValidity() &&
       getCityValidity() &&
       getStateValidity() &&
-      getCountryValidity()) {
+      getCountryValidity() &&
+      getZipcodeValidity()) {
     return true;
   }
   else {
@@ -349,6 +350,48 @@ function getCountryValidity() {
   return isCountryValid;
 }
 
+function getZipcodeValidity() {
+  // Create variables
+  let isZipcodeValid = false;
+  
+  // Read values from HTML
+  let zipcode = document.getElementById("zipcode").value;
+  let country = document.getElementById("country").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if country is the United States and if zipCode is null or empty, if so give error
+  if (country === "united_states" && (zipcode === null || zipcode === "")) {
+    errorMessages += "<p>ZIP code is required for the United States, please enter one.</p>";
+    console.log("ZIP code invalid - not entered");
+  }
+  
+  // Check if zipCode length is greater than 5, if so give error
+  else if (zipcode.length > 5) {
+    errorMessages += "<p>ZIP code can be a maximum of 5 digits long</p>";
+    console.log("ZIP code invalid - too many digits");
+  }
+  
+  // Check if zipCode has any non-numerical digits, if so give an error
+  else if (isNaN(zipcode)) {
+    errorMessages += "<p>ZIP code must only contain numerical digits</p>";
+    console.log("ZIP code invalid - non-numerical characters entered");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isZipcodeValid = true;
+    console.log("ZIP code valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("zipcodeWarning").innerHTML = errorMessages;
+  
+  // Return status of zipCodeValidity
+  return isZipcodeValid;
+}
+
+
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
@@ -360,3 +403,4 @@ document.getElementById("address").addEventListener('blur', getAddressValidity, 
 document.getElementById("city").addEventListener('blur', getCityValidity, false);
 document.getElementById("state").addEventListener('blur', getStateValidity, false);
 document.getElementById("country").addEventListener('blur', getCountryValidity, false);
+document.getElementById("zipcode").addEventListener('blur', getZipcodeValidity, false);
