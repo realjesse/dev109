@@ -1,5 +1,5 @@
 function isValid() {
-  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity()) {
+  if (getFirstNameValidity() && getLastNameValidity() && getEmailvalidity() && getPhoneValidity() && getUsernameValidity()) {
     return true;
   }
   else {
@@ -160,8 +160,43 @@ function getPhoneValidity() {
   return isPhoneValid;
 }
 
+function getUsernameValidity() {
+  // create variables
+  let isUsernameValid = false;
+  
+  // Read values from HTML
+  let username = document.getElementById("username").value;
+  let errorMessages = "";
+  
+  // Validation
+  // Check if username is empty or null, if so give error
+  if (username === null || username === "") {
+    errorMessages += "<p>The username is required, please enter one</p>";
+    console.log("Username invalid - empty");
+  }
+  
+  // Check if username is longer than 12 characters, if so give error
+  else if (username.length > 12) {
+    errorMessages += "<p>Username can only be a maximum of 12 characters, please shorten it</p>";
+    console.log("Username invalid - too long");
+  }
+  
+  // If it passed all the above, it is valid
+  else {
+    isUsernameValid = true;
+    console.log("Username valid");
+  }
+  
+  // Send error messages to HTML
+  document.getElementById("usernameWarning").innerHTML = errorMessages;
+  
+  // Return status of isUsernameValid
+  return isUsernameValid;
+}
+
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
 document.getElementById("email").addEventListener('blur', getEmailValidity, false);
 document.getElementById("phone").addEventListener('blur', getPhoneValidity, false);
+document.getElementById("username").addEventListener('blur', getUsernameValidity, false);
