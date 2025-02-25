@@ -114,7 +114,7 @@ function getEmailValidity() {
   }
   
   // Send error messages to HTML
-  document.getElementById("emailWarning").innerHTML = erorrMessages;
+  document.getElementById("emailWarning").innerHTML = errorMessages;
   
   // Return status of emailValidity
   return isEmailValid;
