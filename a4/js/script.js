@@ -123,3 +123,4 @@ function getEmailValidity() {
 // Add event listeners for each field, checks if the input is valid
 document.getElementById("firstName").addEventListener('blur', getFirstNameValidity, false);
 document.getElementById("lastName").addEventListener('blur', getLastNameValidity, false);
+document.getElementById("email").addEventListener('blur', getEmailValidity, false);
