@@ -1,4 +1,5 @@
 function addGroceryItem() {
+function addGroceryItem() {
   // Instantiate a variable that will hold a new list item element, and a variable
   // which holds the user input value, and instantiate the list variable
   let newGroceryListElement = document.createElement('li');
@@ -13,4 +14,11 @@ function addGroceryItem() {
   
   // Clear input textbox
   document.getElementById('grocery_item').value = '';
+}
+
+function checkKey(event) {
+  // If the key is enter, then it will run addGroceryItem()
+  if (event.key === 'Enter') {
+    addGroceryItem();
+  }
 }
