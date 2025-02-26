@@ -6,7 +6,7 @@ function addGroceryItem() {
   let groceryList = document.getElementById('todo');
   
   // Edit the text content of the new list item
-  newGroceryListElement.textContent(userInputValue);
+  newGroceryListElement.textContent = userInputValue;
   
   // Append newGroceryListElement to the list
   groceryList.appendChild(newGroceryListElement)
