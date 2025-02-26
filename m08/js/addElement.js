@@ -10,4 +10,7 @@ function addGroceryItem() {
   
   // Append newGroceryListElement to the list
   groceryList.appendChild(newGroceryListElement)
+  
+  // Clear input textbox
+  document.getElementById('grocery_item').value = '';
 }
