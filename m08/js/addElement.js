@@ -1,5 +1,4 @@
 function addGroceryItem() {
-function addGroceryItem() {
   // Instantiate a variable that will hold a new list item element, and a variable
   // which holds the user input value, and instantiate the list variable
   let newGroceryListElement = document.createElement('li');
