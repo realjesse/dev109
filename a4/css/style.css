@@ -21,6 +21,11 @@ form {
     color:red;
 }
 
-.class {
+.row {
   display: flex;
+}
+
+.row img {
+  width: 100px;
+  height: 50px;
 }
