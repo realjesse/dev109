@@ -16,3 +16,15 @@ addEventListener("click", function(event) {
     dot.style.top = (event.pageY - 4) + "px";
     document.body.appendChild(dot);
 });
+
+function createDot(event){
+    
+}
+
+function getColor() {
+    return;
+}
+
+function getSize() {
+    return;
+}
