@@ -1,14 +1,13 @@
-let mybutton = document.querySelector("button");
-let content = document.querySelector(".content");
+// Create functions
+function clearDots(event) {
+    // Create a nodeList that contains all the dot divs
+    let dotNodeList = document.querySelectorAll(".dot");
 
-mybutton.addEventListener("click", function(event) {
-    var element = document.getElementsByTagName("div");
-    for (index = element.length - 1; index >= 0; index--) {
-        element[index].parentNode.removeChild(element[index]);
+    // Loop through dotNodeList, removing dots
+    for (i = dotNodeList.length - 1; i >= 0; i--) {
+        dotNodeList[i].parentNode.removeChild(dotNodeList[i]);
     }
-    // Let us stop the propagation of events
-    event.stopPropagation();
-});
+}
 
 function createDot(event){
     // Get the color and size values
@@ -17,7 +16,7 @@ function createDot(event){
 
     // Create dot
     let dot = document.createElement("div");
-    dot.style.className = "dot";
+    dot.className = "dot";
 
     // Alter size and color of dot
     dot.style.width = dot_size + "px";
@@ -35,7 +34,12 @@ function createDot(event){
     document.body.appendChild(dot);
 }
 
+// Create variables
+let mybutton = document.querySelector("button");
+let content = document.querySelector(".content");
+
 // Event listeners
+mybutton.addEventListener("click", clearDots);
 document.body.addEventListener("click", createDot);
 // If the content box is clicked, or any nodes in it, it will stop the propagation
 // so that it will not create a dot
