@@ -13,8 +13,8 @@ addEventListener("click", createDot);
 
 function createDot(event){
     // Get the color and size values
-    dot_color = getElementById("dot_color").value;
-    dot_size = parseInt(getElementById("dot_size").value);
+    dot_color = document.getElementById("dot_color").value;
+    dot_size = parseInt(document.getElementById("dot_size").value);
 
     // Create dot
     let dot = document.createElement("div");
@@ -30,4 +30,7 @@ function createDot(event){
     dot.style.position = "absolute";
     dot.style.left = (event.pageX - dot_radius) + "px";
     dot.style.top = (event.pageY - dot_radius) + "px";
+
+    // Append to document body
+    document.body.appendChild(dot);
 }
