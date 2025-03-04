@@ -18,13 +18,11 @@ addEventListener("click", function(event) {
 });
 
 function createDot(event){
-    
-}
+    // Get the color and size values
+    dot_color = getElementById("dot_color").value;
+    dot_size = getElementById("dot_size").value;
 
-function getColor() {
-    return;
-}
+    // Create element
+    let dot = document.createElement("div");
 
-function getSize() {
-    return;
 }
