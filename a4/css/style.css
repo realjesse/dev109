@@ -20,3 +20,7 @@ form {
 .warning {
     color:red;
 }
+
+.class {
+  display: flex;
+}
