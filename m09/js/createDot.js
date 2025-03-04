@@ -27,6 +27,7 @@ function createDot(event){
     
     // Position dot on page, divide the size by 2 in order to find upper left corner
     dot_radius = dot_size / 2;
+    dot.style.position = "absolute";
     dot.style.left = (event.pageX - dot_radius) + "px";
     dot.style.top = (event.pageY - dot_radius) + "px";
 }
