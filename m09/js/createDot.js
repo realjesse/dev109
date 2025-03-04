@@ -24,6 +24,12 @@ function createDot(event){
 
     // Create dot
     let dot = document.createElement("div");
+
+    // Alter size and color of dot
+    dot.style.width = dot_size + "px";
+    dot.style.height = dot_size + "px";
+    dot.style.backgroundColor = dot_color;
+    dot.style.borderRadius = "50%";
     
     // Position dot on page, divide the size by 2 in order to find upper left corner
     dot_radius = dot_size / 2;
