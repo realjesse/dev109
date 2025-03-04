@@ -1,4 +1,5 @@
-var  mybutton = document.querySelector("button");
+let mybutton = document.querySelector("button");
+let content = document.querySelector(".content");
 
 mybutton.addEventListener("click", function(event) {
     var element = document.getElementsByTagName("div");
@@ -9,8 +10,6 @@ mybutton.addEventListener("click", function(event) {
     event.stopPropagation();
 });
 
-addEventListener("click", createDot);
-
 function createDot(event){
     // Get the color and size values
     dot_color = document.getElementById("dot_color").value;
@@ -18,6 +17,7 @@ function createDot(event){
 
     // Create dot
     let dot = document.createElement("div");
+    dot.style.className = "dot";
 
     // Alter size and color of dot
     dot.style.width = dot_size + "px";
@@ -34,3 +34,11 @@ function createDot(event){
     // Append to document body
     document.body.appendChild(dot);
 }
+
+// Event listeners
+document.body.addEventListener("click", createDot);
+// If the content box is clicked, or any nodes in it, it will stop the propagation
+// so that it will not create a dot
+content.addEventListener("click", (event) => {
+    event.stopPropagation();
+})
