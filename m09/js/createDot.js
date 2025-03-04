@@ -20,9 +20,13 @@ addEventListener("click", function(event) {
 function createDot(event){
     // Get the color and size values
     dot_color = getElementById("dot_color").value;
-    dot_size = getElementById("dot_size").value;
+    dot_size = parseInt(getElementById("dot_size").value);
 
-    // Create element
+    // Create dot
     let dot = document.createElement("div");
-
+    
+    // Position dot on page, divide the size by 2 in order to find upper left corner
+    dot_radius = dot_size / 2;
+    dot.style.left = (event.pageX - dot_radius) + "px";
+    dot.style.top = (event.pageY - dot_radius) + "px";
 }
