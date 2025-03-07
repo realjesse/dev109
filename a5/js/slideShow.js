@@ -8,6 +8,9 @@ let index = 0;
 const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 
+// Set an interval to run autoSlide
+setInterval(autoSlide,2000);
+
 // Event listeners
 previousButton.addEventListener("click", back);
 nextButton.addEventListener("click", next); 
@@ -45,4 +48,11 @@ function back() {
     }
     
     updateImage();
+}
+
+function autoSlide() {
+    // Will only run if auto box is checked
+    if (document.getElementById("auto").checked) {
+        next();
+    }
 }
