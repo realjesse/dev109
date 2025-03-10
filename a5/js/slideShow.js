@@ -30,8 +30,9 @@ updateImage();
 // Functions
 function updateImage() {
     document.getElementById("slideshow").src = myImages[index];
-    document.getElementById("slideshow").alt= captionImages[index];
-    document.getElementById("caption").textContent = captionImages[index]; 
+    document.getElementById("slideshow").alt = captionImages[index][1];
+    document.getElementById("name").textContent = captionImages[index][0];
+    document.getElementById("caption").textContent = captionImages[index][1]; 
 } 
 
 function next() {
