@@ -30,6 +30,11 @@ body {
     padding: 0px 10px;
 }
 
+.slideshow_container img {
+    height: 434px;
+    width: 640px;
+}
+
 .button_container {
     display: flex;
     align-items: center;
