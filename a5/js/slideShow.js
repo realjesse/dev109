@@ -1,5 +1,9 @@
 // Parallel arrays that contain information on the images
-const myImages = ["image/640px-Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg"];
+const myImages = ["image/640px-Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg", 
+    "image/640px-Cole_Thomas_The_Course_of_Empire_The_Arcadian_or_Pastoral_State_1836.jpg",
+    "image/640px-Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+    "image/640px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+    "image/640px-Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg"];
 const captionImages = ["The Savage State, Thomas Cole.", "The Arcadian or Pastoral State, Thomas Cole", 
     "The Consummation, Thomas Cole", "Destruction, Thomas Cole", "Desolation, Thomas Cole"];
 
