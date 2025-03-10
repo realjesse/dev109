@@ -1,6 +1,6 @@
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
     font-family: "Lora", serif;
@@ -20,7 +20,7 @@ body {
 }
 
 .slideshow_container {
-    height: 590px;
+    height: 550px;
     width: 640px;
     display: flex;
     flex-direction: column;
