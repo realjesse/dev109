@@ -17,6 +17,10 @@ body {
 .slideshow_container {
     height: 500px;
     width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .slideshow_container img {
