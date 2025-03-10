@@ -20,7 +20,7 @@ body {
 }
 
 .slideshow_container {
-    height: 500px;
+    height: 590px;
     width: 640px;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body {
     justify-content: space-evenly;
     background-color: #f8f8f8;
     padding: 0px 10px;
+    text-align: center;
 }
 
 .slideshow_container img {
