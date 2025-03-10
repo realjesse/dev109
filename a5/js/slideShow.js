@@ -14,7 +14,7 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 
 // Set an interval to run autoSlide
-setInterval(autoSlide,2000);
+setInterval(autoSlide, 4000);
 
 // Event listeners
 previousButton.addEventListener("click", back);
