@@ -18,3 +18,7 @@ body {
     height: 500px;
     width: 640px;
 }
+
+.slideshow_container img {
+    border: solid 3px black;
+}
