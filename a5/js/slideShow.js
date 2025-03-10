@@ -4,12 +4,15 @@ const myImages = ["image/640px-Cole_Thomas_The_Course_of_Empire_The_Savage_State
     "image/640px-Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
     "image/640px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
     "image/640px-Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg"];
+// There are arrays which contain the name and author of the work (0) and the description (1)
 const captionImages = [["The Savage State, Thomas Cole (1834).", "This shows the first rudiments of society, where a " +
     "limited empire has been established over sea, land, and the animal kingdom."], 
-    "The Arcadian or Pastoral State, Thomas Cole", 
-    "The Consummation of Empire, Thomas Cole", 
-    "Destruction, Thomas Cole", 
-    "Desolation, Thomas Cole"];
+    ["The Arcadian or Pastoral State, Thomas Cole (1834)", "Civilization continues to progress.  Agriculture, " +
+    "commerce, and religion are displayed."],
+    ["The Consummation of Empire, Thomas Cole (1836)", "Civilization is shown at its absolute pinnacle.  Wealth, " +
+    "power, knowledge, and taste are shown in harmony"], 
+    ["Destruction, Thomas Cole (1836)", "Carnage and destruction engulf the city."], 
+    ["Desolation, Thomas Cole (1836)", "The empire is extinct."]];
 
 let index = 0;
 
