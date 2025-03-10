@@ -20,6 +20,9 @@ setInterval(autoSlide, 4000);
 previousButton.addEventListener("click", back);
 nextButton.addEventListener("click", next); 
 
+// When page first loads, run updateImage() so that the first image displays
+updateImage();
+
 // Functions
 function updateImage() {
     document.getElementById("slideshow").src = myImages[index];
