@@ -1,6 +1,6 @@
 // Parallel arrays that contain information on the images
-const myImages = [];
-const captionImages = [];
+const myImages = ["image/640px-Cole_Thomas_The_Course_of_Empire_The_Savage_State_1836.jpg"];
+const captionImages = ["The Savage State, Thomas Cole."];
 
 let index = 0;
 
