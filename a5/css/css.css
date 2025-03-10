@@ -29,3 +29,9 @@ body {
     background-color: #f8f8f8;
     padding: 0px 10px;
 }
+
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
