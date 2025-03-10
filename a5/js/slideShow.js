@@ -4,8 +4,12 @@ const myImages = ["image/640px-Cole_Thomas_The_Course_of_Empire_The_Savage_State
     "image/640px-Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
     "image/640px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
     "image/640px-Cole_Thomas_The_Course_of_Empire_Desolation_1836.jpg"];
-const captionImages = ["The Savage State, Thomas Cole.", "The Arcadian or Pastoral State, Thomas Cole", 
-    "The Consummation of Empire, Thomas Cole", "Destruction, Thomas Cole", "Desolation, Thomas Cole"];
+const captionImages = [["The Savage State, Thomas Cole (1834).", "This shows the first rudiments of society, where a " +
+    "limited empire has been established over sea, land, and the animal kingdom."], 
+    "The Arcadian or Pastoral State, Thomas Cole", 
+    "The Consummation of Empire, Thomas Cole", 
+    "Destruction, Thomas Cole", 
+    "Desolation, Thomas Cole"];
 
 let index = 0;
 
