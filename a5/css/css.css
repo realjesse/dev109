@@ -53,3 +53,7 @@ button:hover {
     color: #5263ff;
     cursor: pointer;
 }
+
+.row {
+    display: flex;
+}
