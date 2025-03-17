@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+    align-items: center;
+    background: #272d39;
+    color: #fff;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header h2,
+.header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header h2 {
+    font-size: 24px;
+}
+
+.header a {
+    font-size: 18px;
+}
+
+/* content */
+
+.content {
+    flex: 1;
+    background-image: url("https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg?t=st=1740011773~exp=1740015373~hmac=b59a420f0144633305456a2540772bfd17e274d5de8c307e98b6570b16226695&w=1380");
+    background-size: cover;
+}
+
+.content .row {
+  display: flex;
+}
+
+/* Content for artifacts */
+#artifacts .row div {
+  margin: 35px;
+}
+
+
+#artifacts .content img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Content for contact me page */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#contact form div {
+  margin: 10px;
+}
+
+/* Content for validation page */
+#validation .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#validation .content img {
+  width: 400px;
+  height: 100px;
+}
+
+#validation .html-column div,
+#validation .css-column div {
+  border-bottom: 1px solid;
+  margin: 50px 0;
+}
+
+/* Thank you style */
+#thank-you .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thank-you .content h2 {
+  font-size: 50px;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #272d39;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 18px;
+}
