@@ -62,6 +62,10 @@ body {
   display: flex;
 }
 
+.content .text_box {
+  width: 50%;
+}
+
 /* Content for artifacts */
 #artifacts .row div {
   margin: 35px;
@@ -115,6 +119,11 @@ body {
 
 #creative .content p {
   font-size: 20px;
+}
+
+#creative .tall_image {
+  width: 200px;
+  height: 300px;
 }
 
 /* Thank you style */
