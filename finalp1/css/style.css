@@ -113,6 +113,10 @@ body {
   width: 50%;
 }
 
+#creative .content p {
+  font-size: 20px;
+}
+
 /* Thank you style */
 #thank-you .content {
   display: flex;
