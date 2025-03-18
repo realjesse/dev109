@@ -103,6 +103,11 @@ body {
   margin: 50px 0;
 }
 
+/* Content for creative.html */
+#creative .content img {
+  float: left;
+}
+
 /* Thank you style */
 #thank-you .content {
   display: flex;
