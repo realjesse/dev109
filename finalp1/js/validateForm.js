@@ -5,6 +5,7 @@ let emailNode = document.getElementById('email');
 let commentNode = document.getElementById('comment')
 const formNode = document.getElementById('contactForm')
 
+// Will listen for form submit, if it submits, it will validate data
 formNode.addEventListener("submit", validateData);
 
 // function to validate data on page
