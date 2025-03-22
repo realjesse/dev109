@@ -24,8 +24,9 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const timeElapsedNode = document.getElementById("time_elapsed");
 
-// Set an interval to run autoSlide
-setInterval(autoSlide, 1000);
+// Create a variable to hold timer interval, then reset so that it starts
+let timerInterval;
+resetInterval();
 
 // Event listeners
 previousButton.addEventListener("click", back);
@@ -56,6 +57,9 @@ function next() {
     // update image
     updateImage();
 
+    // Reset timer interval
+    resetInterval();
+
     // Set time elapses to 0 to reset because we are on a new iamge
     totalTimeElapsed = 0;
     timeElapsedSinceRunAutomaticallyChecked = 0;
@@ -81,6 +85,14 @@ function back() {
 function updateTimeElapsed() {
     totalTimeElapsed++;
     timeElapsedNode.textContent = totalTimeElapsed;
+}
+
+function resetInterval() {
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+
+    timerInterval = setInterval(autoSlide, 1000);
 }
 
 function autoSlide() {
