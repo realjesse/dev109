@@ -22,9 +22,10 @@ let timeElapsedSinceRunAutomaticallyChecked = 0;
 // Get nodes for buttons, for next and previous
 const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
+const timeElapsedNode = document.getElementById("time_elapsed");
 
 // Set an interval to run autoSlide
-setInterval(autoSlide, 4000);
+setInterval(autoSlide, 1000);
 
 // Event listeners
 previousButton.addEventListener("click", back);
@@ -52,7 +53,15 @@ function next() {
         index++;
     }
 
+    // update image
     updateImage();
+
+    // Set time elapses to 0 to reset because we are on a new iamge
+    totalTimeElapsed = 0;
+    timeElapsedSinceRunAutomaticallyChecked = 0;
+
+    // Update timer to represent time
+    updateTimeElapsed();
 }
 
 function back() {
@@ -69,9 +78,23 @@ function back() {
     updateImage();
 }
 
+function updateTimeElapsed() {
+    totalTimeElapsed++;
+    timeElapsedNode.textContent = totalTimeElapsed;
+}
+
 function autoSlide() {
+    // Update time elapsed node and totalTimeElapsed variable
+    updateTimeElapsed();
+
     // Will only run if auto box is checked
     if (document.getElementById("auto").checked) {
-        next();
+
+        // if it has been 4 seconds since checkbox, select next image
+        if (timeElapsedSinceRunAutomaticallyChecked === 4) {
+            next();
+        }
+
+        timeElapsedSinceRunAutomaticallyChecked++;
     }
 }
