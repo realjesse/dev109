@@ -14,7 +14,10 @@ const captionImages = [["The Savage State, Thomas Cole (1834).", "This shows the
     ["Destruction, Thomas Cole (1836)", "Carnage and destruction engulf the city."], 
     ["Desolation, Thomas Cole (1836)", "The empire is extinct."]];
 
+// Create index for arrays indexes, time elapsed elements for timer
 let index = 0;
+let totalTimeElapsed = 0;
+let timeElapsedSinceRunAutomaticallyChecked = 0;
 
 // Get nodes for buttons, for next and previous
 const nextButton = document.getElementById("next");
