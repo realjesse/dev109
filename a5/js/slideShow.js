@@ -65,7 +65,7 @@ function next() {
     timeElapsedSinceRunAutomaticallyChecked = 0;
 
     // Update timer to represent time
-    updateTimeElapsed();
+    timeElapsedNode.textContent = totalTimeElapsed;
 }
 
 function back() {
@@ -79,11 +79,17 @@ function back() {
         index--;
     }
     
+    // update image
     updateImage();
-}
 
-function updateTimeElapsed() {
-    totalTimeElapsed++;
+    // Reset timer interval
+    resetInterval();
+
+    // Set time elapses to 0 to reset because we are on a new iamge
+    totalTimeElapsed = 0;
+    timeElapsedSinceRunAutomaticallyChecked = 0;
+
+    // Update timer to represent time
     timeElapsedNode.textContent = totalTimeElapsed;
 }
 
@@ -97,16 +103,17 @@ function resetInterval() {
 
 function autoSlide() {
     // Update time elapsed node and totalTimeElapsed variable
-    updateTimeElapsed();
+    totalTimeElapsed++;
+    timeElapsedNode.textContent = totalTimeElapsed;
 
     // Will only run if auto box is checked
     if (document.getElementById("auto").checked) {
+
+        timeElapsedSinceRunAutomaticallyChecked++;
 
         // if it has been 4 seconds since checkbox, select next image
         if (timeElapsedSinceRunAutomaticallyChecked === 4) {
             next();
         }
-
-        timeElapsedSinceRunAutomaticallyChecked++;
     }
 }
